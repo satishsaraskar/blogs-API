@@ -6,5 +6,7 @@ namespace CodePulse.API.Repositories.Interface
     {
         //only define of the method not an actual implementation
         Task<Category> CreateAsync (Category category);
+
+        Task<IEnumerable<Category>>GetAllAsync();
     }
 }
